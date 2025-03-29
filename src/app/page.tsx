@@ -5,8 +5,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
 import { useRouter } from "next/navigation";
-import { Overlay, Title, Button } from "./components/StyledComponents.ts";
-
 // ---------- 3D-Hintergrund (Torus Knots) ----------
 
 // Eine einzelne Partikel-Komponente: Rotierender, kleinerer Torus Knot

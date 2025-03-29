@@ -23,7 +23,7 @@ export default function GamePage() {
   const [tasks, setTasks] = useState<any[]>([]);
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
   const [generatedRule, setGeneratedRule] = useState('');
-  const [isGenerating, setIsGenerating] = useState(false);
+  const [isGenerating] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {

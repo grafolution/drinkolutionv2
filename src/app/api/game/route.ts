@@ -1,3 +1,4 @@
+/*
 import { NextResponse } from 'next/server';
 import { randomUUID } from 'crypto';
 
@@ -46,12 +47,12 @@ export async function POST(request: Request) {
     );
   }
 }
-*/
+
 
 /**
  * GET /api/game
  * Gibt alle in Redis gespeicherten Spiele zurück.
- */
+ *
 export async function GET() {
   try {
     // Alle Spiele als Objekt abrufen
@@ -71,3 +72,4 @@ export async function GET() {
     return NextResponse.json({ error: error.message }, { status: 400 });
   }
 }
+*/
