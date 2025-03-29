@@ -1,7 +1,5 @@
 import { NextResponse } from 'next/server';
 import { randomUUID } from 'crypto';
-import redis from 'src/lib/redis'; // Pfad je nach Struktur anpassen
-import { sendKafkaEvent } from 'src/lib//kafka'; // Falls du Kafka auch integriert hast
 
 /**
  * POST /api/game
@@ -12,6 +10,7 @@ import { sendKafkaEvent } from 'src/lib//kafka'; // Falls du Kafka auch integrie
  *   "players": ["Alice", "Bob"]
  * }
  */
+ /*
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -27,7 +26,7 @@ export async function POST(request: Request) {
     await redis.hset('games', newGameId, JSON.stringify(gameData));
 
     // Kafka-Event senden (optional)
-    await sendKafkaEvent('game-events', {
+   /* await sendKafkaEvent('game-events', {
       type: 'GAME_CREATED',
       gameId: newGameId,
       name: body.name,
@@ -47,6 +46,7 @@ export async function POST(request: Request) {
     );
   }
 }
+*/
 
 /**
  * GET /api/game
