@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { randomUUID } from 'crypto';
-import redis from '../../../lib/redis'; // Pfad je nach Struktur anpassen
-import { sendKafkaEvent } from '../../../lib/kafka'; // Falls du Kafka auch integriert hast
+import redis from 'src/lib/redis'; // Pfad je nach Struktur anpassen
+import { sendKafkaEvent } from 'src/lib//kafka'; // Falls du Kafka auch integriert hast
 
 /**
  * POST /api/game

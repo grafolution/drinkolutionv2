@@ -15,11 +15,19 @@ export const Title = styled.h1`
   color: #333;
 `;
 
-export const Task = styled.p`
-  text-align: center;
-  font-size: 1.5rem;
-  color: #555;
-  margin: 1rem 0;
+export const Task = styled.div`
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  p {
+    margin: 0.3rem 0;
+  }
 `;
 
 export const Button = styled.button`
@@ -39,17 +47,27 @@ export const Button = styled.button`
   }
 `;
 
+export const ButtonGroup = styled.div`
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+`;
+
 export const Loading = styled.p`
   text-align: center;
   color: #888;
 `;
 
+// Container for the generated rule
 export const RuleContainer = styled.div`
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #fff;
+  background: #e0f7fa;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  margin-top: 1rem;
+  width: 100%;
 `;
 
 export const RuleTitle = styled.h3`
@@ -81,3 +99,24 @@ export const Overlay = styled.div`
   text-align: center;
 `;
 
+// Accept Button: styled with a green background, indicating positive action.
+export const AcceptButton = styled.button`
+  background-color: #A3C520;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+`;
+
+// Decline Button: styled with a red background, indicating negative or skip action.
+export const DeclineButton = styled.button`
+  background-color: #f44336; /* Red */
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+`;
