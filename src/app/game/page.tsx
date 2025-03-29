@@ -20,7 +20,7 @@ import {
 
 export default function GamePage() {
   const router = useRouter();
-  const [tasks, setTasks] = useState<any[]>([]);
+  const [tasks, setTasks] = useState<[]>([]);
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
   const [generatedRule, setGeneratedRule] = useState('');
   const [isGenerating] = useState(false);

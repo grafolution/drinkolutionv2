@@ -1,5 +1,5 @@
 // lib/kafka.ts
-import { Kafka } from 'kafkajs';
+//import { Kafka } from 'kafkajs';
 
 /*
 // Kafka-Client-Konfiguration

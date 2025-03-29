@@ -1,7 +1,7 @@
 
 import { fetchData } from "@lib/supabaseClient";
 
-export  async function GET(req: Request, res: Response) {
+export  async function GET() {
 
     try {
         const data = await fetchData("tasks"); // Pass table name dynamically
