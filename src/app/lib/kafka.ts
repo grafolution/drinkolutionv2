@@ -1,6 +1,7 @@
 // lib/kafka.ts
-import { Kafka } from 'kafkajs';
+//import { Kafka } from 'kafkajs';
 
+/*
 // Kafka-Client-Konfiguration
 const kafka = new Kafka({
   clientId: 'drinkolutionv2',
@@ -28,3 +29,4 @@ export async function sendKafkaEvent(topic: string, payload: any) {
     await producer.disconnect();
   }
 }
+*/
