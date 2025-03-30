@@ -12,7 +12,7 @@ export  async function GET() {
     } catch (error) {
         console.error("Error fetching data:", error);
       return
-    return new Response(JSON.stringify({ error: error.message }),{
+    return new Response(JSON.stringify({ error: error}),{
         status:500,
         headers:{ "Content-Type": "application/json" }
     })
